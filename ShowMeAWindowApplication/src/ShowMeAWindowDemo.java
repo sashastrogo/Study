@@ -1,6 +1,8 @@
 import javax.swing.JOptionPane;
 class ShowMeAWindowDemo{
     public static void main(String[] args){
-        JOptionPane.showMessageDialog(null,"Первая программа на Java");
+        String title="Сообщение";
+        String text="Продолжаем изучать Java";
+        JOptionPane.showMessageDialog(null,text,title,JOptionPane.WARNING_MESSAGE);
     }
 }
