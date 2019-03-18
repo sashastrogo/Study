@@ -4,20 +4,24 @@ public class Cat {
     private Double weight;
     private Double weightFood;
     private Double food;
+    private Double count;
 
 
     private Double minWeight;
     private Double maxWeight;
 
+
     public Cat() {
+        count++;
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
         maxWeight = 9000.0;
         food = 0.0;
-
     }
-    public void pipi(){
+
+
+    public void pipi() {
         weight = weight - 10;
     }
 
@@ -41,8 +45,10 @@ public class Cat {
 
     public String getStatus() {
         if (weight < minWeight) {
+            count = count - 1;
             return "Dead";
         } else if (weight > maxWeight) {
+            count = count - 1;
             return "Exploded";
         } else if (weight > originWeight) {
             return "Sleeping";
@@ -50,11 +56,12 @@ public class Cat {
             return "Playing";
         }
     }
-    public Double getEatenFood()
-    {
+
+    public Double getEatenFood() {
+
         return weightFood;
-          }
-
-
-
+    }
+    public static Double getCount() {
+        return getCount();
+    }
 }

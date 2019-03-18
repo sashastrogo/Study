@@ -14,6 +14,8 @@ public class Loader
 
         Cat murka = new Cat();
 
+        System.out.println(Cat.getCount());
+
 
         System.out.println("murzik weight = " + murzik.getWeight());
         System.out.println("murzik say:");
@@ -22,6 +24,7 @@ public class Loader
         murzik.feed(10.0);
         System.out.println("murzik new weight = " + murzik.getWeight());
         System.out.println(murzik.getEatenFood());
+
 
         System.out.println("vaska - " + vaska.getStatus());
 
@@ -36,6 +39,7 @@ public class Loader
         System.out.println(barsik.getWeight());
         System.out.println("Sorry, your's barsik is " + barsik.getStatus());
 
+
         System.out.println(murka.getWeight());
         murka.drink(1.0);
         System.out.println(murka.getWeight());
@@ -44,5 +48,8 @@ public class Loader
         murka.pipi();
 //        далее должны быть прописаны два метода через точку, как в уроке, но не вышло!
         System.out.println(murka.getWeight());
+
+
     }
+
 }
