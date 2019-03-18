@@ -17,6 +17,9 @@ public class Cat {
         food = 0.0;
 
     }
+    public void pipi(){
+        weight = weight - 10;
+    }
 
     public void meow() {
         weight = weight - 1;

@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Loader
 {
@@ -37,6 +38,10 @@ public class Loader
 
         System.out.println(murka.getWeight());
         murka.drink(1.0);
+        System.out.println(murka.getWeight());
+
+        System.out.println(murka.getWeight());
+        murka.pipi();
         System.out.println(murka.getWeight());
     }
 }
