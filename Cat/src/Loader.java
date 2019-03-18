@@ -18,6 +18,9 @@ public class Loader
         System.out.println("murzik say:");
         murzik.meow();
         System.out.println("murzik weight = " + murzik.getWeight());
+        murzik.feed(10.0);
+        System.out.println("murzik new weight = " + murzik.getWeight());
+        System.out.println(murzik.getEatenFood());
 
         System.out.println("vaska - " + vaska.getStatus());
 
