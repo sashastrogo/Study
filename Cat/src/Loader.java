@@ -42,6 +42,7 @@ public class Loader
 
         System.out.println(murka.getWeight());
         murka.pipi();
+//        далее должны быть прописаны два метода через точку, как в уроке, но не вышло!
         System.out.println(murka.getWeight());
     }
 }
