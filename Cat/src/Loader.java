@@ -1,7 +1,7 @@
 import java.util.Objects;
 
-public class Loader
-{
+public class Loader{
+
     public static void main(String[] args)
     {
         Cat murzik = new Cat();
@@ -22,6 +22,7 @@ public class Loader
         murzik.feed(10.0);
         System.out.println("murzik new weight = " + murzik.getWeight());
         System.out.println(murzik.getEatenFood());
+        System.out.println(murzik.getCount());
 
 
         System.out.println("vaska - " + vaska.getStatus());
@@ -36,6 +37,7 @@ public class Loader
         barsik.feed(10000.0);
         System.out.println(barsik.getWeight());
         System.out.println("Sorry, your's barsik is " + barsik.getStatus());
+        System.out.println(barsik.getCount());
 
 
         System.out.println(murka.getWeight());
