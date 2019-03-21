@@ -13,9 +13,7 @@ public class Loader
         Cat barsik = new Cat();
 
         Cat murka = new Cat();
-
-        System.out.println(Cat.getCount());
-
+        
 
         System.out.println("murzik weight = " + murzik.getWeight());
         System.out.println("murzik say:");

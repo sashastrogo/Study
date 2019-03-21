@@ -4,15 +4,12 @@ public class Cat {
     private Double weight;
     private Double weightFood;
     private Double food;
-    private Double count;
-
 
     private Double minWeight;
     private Double maxWeight;
 
 
     public Cat() {
-        count++;
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
@@ -60,8 +57,5 @@ public class Cat {
     public Double getEatenFood() {
 
         return weightFood;
-    }
-    public static Double getCount() {
-        return getCount();
     }
 }
