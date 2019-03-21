@@ -1,6 +1,16 @@
 
 public class Cat {
 
+    //========Создание конструктора=====================================================================
+
+    public static Cat getKitten(){
+        Double gramm = (100.0 + 200.0);
+        Cat cat = new Cat();
+        return cat;
+    }
+
+    //=============================================================================
+
     private Double originWeight;
     private Double weight;
     private Double weightFood;
@@ -9,11 +19,14 @@ public class Cat {
     private Double maxWeight;
     private static int count;
 
+    //=======Подсчет кошек======================================================================
+
     public static int getCount() {
         count++;
         return count;
-
     }
+
+    //=======Конструктор======================================================================
 
     public Cat() {
 
@@ -23,6 +36,15 @@ public class Cat {
         maxWeight = 9000.0;
         food = 0.0;
     }
+
+    //=======Клон======================================================================
+
+    public void cloneСreation(Double weight){
+        this.weight = weight;
+        originWeight = weight;
+    }
+
+    //=======Методы======================================================================
 
     public void pipi() {
         weight = weight - 10;
